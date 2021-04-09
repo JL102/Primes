@@ -35,7 +35,7 @@ class PrimeSieve{
 	
 	runSieve() {
 		let factor = 3;
-		let q = parseInt(Math.sqrt(this.sieveSize));
+		const q = ~~Math.sqrt(this.sieveSize);
 		
 		while (factor <= q) {
 			for (let num = factor; num < this.sieveSize; ++num) {
